@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {  
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ff8215;
+    width: 100%;
+    z-index: 100;
+
+}
+
+nav h1 {
+    font-family: poppins;
+    font-size: 50px;
+    color: white;
+    padding: 20px 0px;
+}
+
+.left {
+    height: 82.4vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 120px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: url(bg.jpeg);
+    background-size: cover;
+    z-index: 80;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.kalender1 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -150px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+
+#check1,#check2,#check3,#check4,#check5,#check6,#check7,#check8,#check9,#check10,#check11,#check12{
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+}
+
+.kalender1:hover,.kalender2:hover,.kalender3:hover,.kalender4:hover 
+,.kalender5:hover,.kalender6:hover,.kalender7:hover,.kalender8:hover 
+,.kalender9:hover,.kalender10:hover,.kalender11:hover,.kalender12:hover{ 
+    scale: 58%;
+}
+
+.kalender2 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender3 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender4 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender5 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender6 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender7 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender8 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender9 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender10 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender11 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.kalender12 {
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    scale: 60%;
+    margin-top: -100px;
+    margin-left: -65px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.right{
+    width: 70%;
+    display: flex;
+    justify-content:start;
+    background: url(bg2.png);
+    background-size: cover;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+
+
+.kalenderbaru1 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    left: 11.5vw;
+    
+}
+
+.kalenderbaru2 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 25vw;
+    
+}
+
+.kalenderbaru3 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 38.5vw;
+}
+
+.kalenderbaru4 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 52vw;
+}
+.kalenderbaru5 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 65.5vw;
+}
+.kalenderbaru6 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 79vw;
+}
+.kalenderbaru7 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 92.5vw;
+}
+.kalenderbaru8 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 106vw;
+}
+.kalenderbaru9 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 119.5vw;
+}
+.kalenderbaru10 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 133vw;
+}
+.kalenderbaru11 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 146.5vw;
+}
+.kalenderbaru12 {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    left: 160vw;
+}
+
+.isiright{
+    display: flex;
+    position: absolute;
+    transition: 0.5s ease;
+    left: 26vw;
+}
+
+#check1:checked ~ .right .isiright {
+    left: 30vw;
+}
+#check2:checked ~ .right .isiright {
+    left: -30vw;
+}
+#check3:checked ~ .right .isiright{
+    left: -90vw;
+}
+#check4:checked ~ .right .isiright{
+    left: -150vw;
+}
+#check5:checked ~ .right .isiright{
+    left: -210vw;
+}
+#check6:checked ~ .right .isiright{
+    left: -270vw;
+}
+#check7:checked ~ .right .isiright{
+    left: -330vw;
+}
+#check8:checked ~ .right .isiright{
+    left: -390vw;
+}
+#check9:checked ~ .right .isiright{
+    left: -450vw;
+}
+#check10:checked ~ .right .isiright{
+    left: -510vw;
+}
+#check11:checked ~ .right .isiright{
+    left: -570vw;
+}
+#check12:checked ~ .right .isiright{
+    left: -630vw;
+}
+
+
+
+#check2{
+    z-index: 100;
+    position: absolute;
+}
+
+.bulanbaru{
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+
+.bulanbaru2{
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+
+.bulanbaru3{
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+    background-color: #3498db;
+}
+
+.bulanbaru4{
+    background-color: #9b59b6;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru5{
+    background-color: #f1c40f;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru6{
+    background-color: #e67e22;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru7{
+    background-color: #e74c3c;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru8{
+    background-color: #34495e;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru9{
+    background-color: #95a5a6;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru10{
+    background-color: #474787;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru11{
+    background-color: #ccae62;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+.bulanbaru12{
+    background-color: #cc8e35;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+}
+
+.haribaru {
+    display: flex;
+    justify-content: space-around;
+    font-family: poppins;
+    margin-top: 20px;   
+}
+
+.haribaru h4 {
+    padding: 0px 10px;
+    
+}
+
+.angkabaru {
+    display: grid;
+    font-family: poppins;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.angkabaru p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.bulan {
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    background-color: #1abc9c;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+.bulan2,
+.bulan3,
+.bulan4,
+.bulan5,
+.bulan6,
+.bulan7,
+.bulan8,
+.bulan9,
+.bulan10,
+.bulan11,
+.bulan12 {
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+.bulan2 {
+    background-color: #2ecc71;
+}
+
+.bulan3 {
+    background-color: #3498db;
+}
+
+.bulan4 {
+    background-color: #9b59b6;
+}
+
+.bulan5 {
+    background-color: #f1c40f;
+}
+
+.bulan6 {
+    background-color: #e67e22;
+}
+
+.bulan7 {
+    background-color: #e74c3c;
+}
+
+.bulan8 {
+    background-color: #34495e;
+}
+
+.bulan9 {
+    background-color: #95a5a6;
+}
+
+.bulan10 {
+    background-color: #474787;
+}
+
+.bulan11 {
+    background-color: #ccae62;
+}
+
+.bulan12 {
+    background-color: #cc8e35;
+}
+
+.hari {
+    display: flex;
+    justify-content: space-around;
+    font-family: poppins;
+    padding-top: 10px;
+}
+
+.hari h4 {
+    padding: 0px 10px;
+}
+
+.angka {
+    display: grid;
+    font-family: poppins;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.angka p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.red {
+    color: red;
+}
